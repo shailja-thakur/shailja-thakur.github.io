@@ -6,7 +6,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-<title>Shailja  Thakur | blank</title>
+<title>Shailja  Thakur</title>
 <meta name="description" content="A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
 ">
 
@@ -29,7 +29,7 @@
 <link rel="shortcut icon" href="/assets/img/favicon.ico">
 <link rel="stylesheet" href="/assets/css/main.css">
 
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/content/home/hero.html">
 
 <!-- Theming-->
 
@@ -133,56 +133,72 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1></h1>
-    <h2></h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title"></h1>
+    <p class="post-description"></p>
+  </header>
 
+  <article>
+    <p>+++</p>
+<h1 id="hero-widget">Hero widget.</h1>
+<p>widget = “hero”  # See https://sourcethemes.com/academic/docs/page-builder/
+headless = true  # This file represents a page section.
+active = false  # Activate this widget? true/false
+weight = 10  # Order that this section will appear.</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/2020/09/28/github-metadata.html">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/2020/09/28/twitter.html">a post with twitter</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>an example of a blog post with twitter</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/2018/12/22/distill.html">a distill-style blog post</a></h3>
-        <p class="post-meta">December 22, 2018</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-  </ul>
+<p>title = “Academic”</p>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blank">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blank - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blank - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<h1 id="hero-image-optional-enter-filename-of-an-image-in-the-staticimg-folder">Hero image (optional). Enter filename of an image in the <code class="language-plaintext highlighter-rouge">static/img/</code> folder.</h1>
+<p>hero_media = “hero-academic.png”</p>
 
+<p>[design.background]
+  # Apply a background color, gradient, or image.
+  #   Uncomment (by removing <code class="language-plaintext highlighter-rouge">#</code>) an option to apply it.
+  #   Choose a light or dark text color by setting <code class="language-plaintext highlighter-rouge">text_color_light</code>.
+  #   Any HTML color name or Hex value is valid.</p>
 
+<p># Background color.
+  # color = “navy”</p>
+
+<p># Background gradient.
+  gradient_start = “#4bb4e3”
+  gradient_end = “#2b94c3”</p>
+
+<p># Background image.
+  # image = “”  # Name of image in <code class="language-plaintext highlighter-rouge">static/img/</code>.
+  # image_darken = 0.6  # Darken the image? Range 0-1 where 0 is transparent and 1 is opaque.
+  # image_size = “cover”  #  Options are <code class="language-plaintext highlighter-rouge">cover</code> (default), <code class="language-plaintext highlighter-rouge">contain</code>, or <code class="language-plaintext highlighter-rouge">actual</code> size.
+  # image_position = “center”  # Options include <code class="language-plaintext highlighter-rouge">left</code>, <code class="language-plaintext highlighter-rouge">center</code> (default), or <code class="language-plaintext highlighter-rouge">right</code>.
+  # image_parallax = true  # Use a fun parallax-like fixed background effect? true/false</p>
+
+<p># Text color (true=light or false=dark).
+  text_color_light = true</p>
+
+<h1 id="call-to-action-links-optional">Call to action links (optional).</h1>
+<h1 id="display-links-by-specifying-a-url-and-label-below-icon-is-optional-for-cta">Display link(s) by specifying a URL and label below. Icon is optional for <code class="language-plaintext highlighter-rouge">[cta]</code>.</h1>
+<h1 id="remove-a-linknote-by-deleting-a-ctanote-block">Remove a link/note by deleting a cta/note block.</h1>
+<p>[cta]
+  url = “https://sourcethemes.com/academic/docs/install/”
+  label = “Get Started”
+  icon_pack = “fas”
+  icon = “download”</p>
+
+<p>[cta_alt]
+  url = “https://sourcethemes.com/academic/”
+  label = “View Documentation”</p>
+
+<h1 id="note-an-optional-note-to-show-underneath-the-links">Note. An optional note to show underneath the links.</h1>
+<p>[cta_note]
+  label = ‘<a class="js-github-release" href="https://sourcethemes.com/academic/updates" data-repo="gcushen/hugo-academic">Latest release<!-- V --></a>’
++++</p>
+
+<p><strong>The Best Way to Create the Website You Want from Markdown (or Jupyter/RStudio)</strong></p>
+
+<p>Build <strong>Anything</strong> with Widgets</p>
+
+<p><span style="text-shadow: none;"><a class="github-button" href="https://github.com/gcushen/hugo-academic" data-icon="octicon-star" data-size="large" data-show-count="true" aria-label="Star this on GitHub">Star</a><script async="" defer="" src="https://buttons.github.io/buttons.js"></script></span></p>
+
+  </article>
 
 </div>
 
