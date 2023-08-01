@@ -18,6 +18,16 @@
       font-weight: bold;
       text-decoration: underline;
     }
+   @media (max-width: 768px) {
+  .profile-image {
+    float: right;
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .text-content {
+    text-align: left;
+  }
+}
   </style>
 </head>
 <body>
@@ -27,12 +37,12 @@
   </div>
   <!-- Add the content before the Research heading here -->
   <!-- Everything before the Research section goes here -->
-   <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
     <tr style="padding:0px">
       <td style="padding:0px">
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
           <tr style="padding:0px">
-  <td style="padding:2.5%;width:63%;vertical-align:middle;text-align:center;"> <!-- Center-align the text -->
+            <td class="text-content" style="padding:2.5%;width:63%;vertical-align:middle;text-align:center;">
     <p>
       <name>Shailja Thakur</name>
     </p>
@@ -42,19 +52,17 @@
     <!-- ... -->
   </td>
   <td style="padding:2.5%;width:40%;max-width:40%; vertical-align: top;">
-    <div style="text-align:center"> <!-- Center-aligned div wrapper -->
-      <a href="images/prof_pic-modified.png"><img style="width:60%;max-width:60%" alt="profile photo" src="images/prof_pic-modified.png" class="hoverZoomLink"></a>
-      <p style="text-align:center">
-  <a href="data/shailja_cv_v3.pdf" style="font-size: 25px;">CV</a> <span style="font-size: 25px;"> | </span>
-  <a href="data/ShailjaThakur-bio.txt" style="font-size: 25px;">Bio</a>
-</p>
-    </div>
-  </td>
-</tr>
-
-
-
+              <div style="text-align:center"> <!-- Center-aligned div wrapper -->
+                <a href="images/prof_pic-modified.png"><img class="profile-image" style="width:60%;max-width:60%" alt="profile photo" src="images/prof_pic-modified.png" class="hoverZoomLink"></a>
+                <p style="text-align:center">
+                  <a href="data/shailja_cv_v3.pdf" style="font-size: 25px;">CV</a> <span style="font-size: 25px;"> | </span>
+                  <a href="data/ShailjaThakur-bio.txt" style="font-size: 25px;">Bio</a>
+                </p>
+              </div>
+            </td>
+          </tr>
         </tbody></table>
+
 
 
        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
