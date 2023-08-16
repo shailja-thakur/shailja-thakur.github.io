@@ -38,22 +38,194 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
-          <tr onmouseout="time_stop()" onmouseover="time_start()">
+          <tr onmouseout="mleda_stop()" onmouseover="mleda_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
-                <div class="two" id='time_image'>
-                  <img src='images/m_flowchart1_fine_tuned_colored.png' width="160"></div>
-                <img src='images/system_overview_1_9-1.png' width="160">
+                <div class="two" id='mleda_image'>
+                  <img src='images/mleda2.png' width="180"></div>
+                <img src='images/mleda1.png' width="180">
               </div>
               <script type="text/javascript">
-                function time_start() {
-                  document.getElementById('time_image').style.opacity = "1";
+                function mleda_start() {
+                  document.getElementById('mleda_image').style.opacity = "1";
                 }
 
-                function time_stop() {
-                  document.getElementById('time_image').style.opacity = "0";
+                function mleda_stop() {
+                  document.getElementById('mleda_image').style.opacity = "0";
                 }
-                time_stop()
+                mleda_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2308.00708">
+                <papertitle>From Concepts to Reality: Bridging Gaps in ML-Guided EDA with Curated Datasets</papertitle>
+              </a>
+              <br>
+              <a href="https://scholar.google.com/citations?user=DCeMBDKRwaQC&hl=en&oi=ao/">Animesh Chowdhury</a>,
+              <strong>Shailja Thakur</strong>,
+              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>,
+              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>,
+              <a href="https://scholar.google.com/citations?user=Yf8OqQQAAAAJ&hl=en/">Siddharth Garg</a>
+              <br>
+              <em>ICCAD &nbsp <font color="red"><strong>(Special Session Proposal)</strong></font></em>, 
+              2023
+              <br>
+              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
+              
+              <p></p>
+              <p>
+              This paper highlights the lack of standard datasets for ML-guided EDA tools in the journey from RTL to GDSII and introduces two high-quality datasets: Verigen, derived from GitHub and Verilog textbooks for Verilog code generation, and OpenABC-D, for logic synthesis tasks. The discussion encompasses challenges in dataset curation and growth, quality, security, and the application of specialized data augmentation tools for the hardware domain.
+              </p>
+            </td>
+          </tr>
+
+          <tr onmouseout="vgen_stop()" onmouseover="vgen_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='vgen_image'>
+                  <img src='images/vgen1.png' width="180"></div>
+                <img src='images/vgen2.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function vgen_start() {
+                  document.getElementById('vgen_image').style.opacity = "1";
+                }
+
+                function vgen_stop() {
+                  document.getElementById('vgen_image').style.opacity = "0";
+                }
+                vgen_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2308.00708">
+                <papertitle>VeriGen: A Large Language Model for Verilog Code Generation</papertitle>
+              </a>
+              <br>
+              <strong>Shailja Thakur</strong>,
+              <a href="https://scholar.google.com/citations?user=DCeMBDKRwaQC&hl=en&oi=ao/">Baleegh Ahmad</a>,
+              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>,
+              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>,
+              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>,
+              <a href="https://scholar.google.com/citations?user=MzAxRscAAAAJ&hl=en/">Brendan Dolan-Gavitt</a>,
+              <a href="https://scholar.google.com/citations?user=Yf8OqQQAAAAJ&hl=en/">Siddharth Garg</a>
+              <br>
+              <em> &nbsp <font color="red"><strong>(under review)</strong></font></em>,
+              2023
+              <br>
+              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
+              
+              <p></p>
+              <p>
+              This is the first study to comprehensively explore both commercial and open-source Large Language Models (LLMs) for their Verilog code generation capabilities. By comparing these with our in-house trained LLM for Verilog, the results demonstrate that our model exhibits superior performance, underlining the potential of specialized LLMs in hardware design automation.
+              </p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="assert_stop()" onmouseover="assert_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='assert_image'>
+                  <img src='images/assert1.png' width="180"></div>
+                <img src='images/assert2.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function assert_start() {
+                  document.getElementById('assert_image').style.opacity = "1";
+                }
+
+                function assert_stop() {
+                  document.getElementById('assert_image').style.opacity = "0";
+                }
+                assert_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2306.14027">
+                <papertitle>LLM-assisted Generation of Hardware Assertions</papertitle>
+              </a>
+              <br>
+              <a href="https://scholar.google.com/citations?user=4X6V5rwAAAAJ&hl=en&oi=ao">Rahul Kande</a>,
+              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>,
+              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>,
+              <a href="https://scholar.google.com/citations?user=MzAxRscAAAAJ&hl=en/">Brendan Dolan-Gavitt</a>,
+              <strong>Shailja Thakur</strong>,
+              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>,
+              <a href="https://scholar.google.com/citations?user=E8vzlYcAAAAJ&hl=en">Jeyavijayan Rajendran</a>
+              <br>
+              <em> &nbsp <font color="red"><strong>(under review)</strong></font></em>,
+              2023
+              <br>
+              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
+              
+              <p></p>
+              <p>
+              In this work, we investigate the use of emerging large language models (LLMs) for code generation in hardware assertion generation for security, where primarily natural language prompts, such as those one would see as code comments in assertion files, are used to produce SystemVerilog assertions.
+              </p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="bug_stop()" onmouseover="bug_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='bug_image'>
+                  <img src='images/bug1.png' width="180"></div>
+                <img src='images/bug2.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function bug_start() {
+                  document.getElementById('bug_image').style.opacity = "1";
+                }
+
+                function bug_stop() {
+                  document.getElementById('bug_image').style.opacity = "0";
+                }
+                bug_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2302.01215">
+                <papertitle>On Hardware Security Bug Code Fixes By Querying Large Language Models</papertitle>
+              </a>
+              <br>
+              
+              <a href="https://scholar.google.com/citations?user=DCeMBDKRwaQC&hl=en&oi=ao/">Baleegh Ahmad</a>,
+              <strong>Shailja Thakur</strong>,
+              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>,
+              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>,
+              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>
+              <br>
+              <em> &nbsp <font color="red"><strong>(under review)</strong></font></em>,
+              2023
+              <br>
+              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
+              
+              <p></p>
+              <p>
+              In this research, we harness the power of Large Language Models (LLMs) to automatically detect and rectify security-related bugs in Verilog hardware designs. By curating a unique dataset and employing a tailored framework, our method surpasses existing automated tools in hardware bug repair.
+              </p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="veri_stop()" onmouseover="veri_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='veri_image'>
+                  <img src='images/veri2.png' width="180"></div>
+                <img src='images/veri1.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function veri_start() {
+                  document.getElementById('veri_image').style.opacity = "1";
+                }
+
+                function veri_stop() {
+                  document.getElementById('veri_image').style.opacity = "0";
+                }
+                veri_stop()
               </script>
             </td>
             <td style="padding:20px;width:75%;vertical-align:middle">
@@ -62,12 +234,12 @@
               </a>
               <br>
               <strong>Shailja Thakur</strong>,
-              <a href="https://scholar.google.com/citations?user=DCeMBDKRwaQC&hl=en&oi=ao/">Baleegh Ahmad</a>
-              Zhenxing Fan
-              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>
-              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>
-              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>
-              <a href="https://scholar.google.com/citations?user=MzAxRscAAAAJ&hl=en/">Brendan Dolan-Gavitt</a>
+              <a href="https://scholar.google.com/citations?user=DCeMBDKRwaQC&hl=en&oi=ao/">Baleegh Ahmad</a>,
+              Zhenxing Fan,
+              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>,
+              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>,
+              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>,
+              <a href="https://scholar.google.com/citations?user=MzAxRscAAAAJ&hl=en/">Brendan Dolan-Gavitt</a>,
               <a href="https://scholar.google.com/citations?user=Yf8OqQQAAAAJ&hl=en/">Siddharth Garg</a>
               <br>
               <em>DATE &nbsp <font color="red"><strong>(Nominated for Best Paper Award)</strong></font></em>,
@@ -124,8 +296,8 @@
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
                 <div class="two" id='time_image'>
-                  <img src='images/class_1.png' width="160"></div>
-                <img src='images/class_0.png' width="160">
+                  <img src='images/Time_1.png' width="160"></div>
+                <img src='images/Time_2.png' width="160">
               </div>
               <script type="text/javascript">
                 function time_start() {
