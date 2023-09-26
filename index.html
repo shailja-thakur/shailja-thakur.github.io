@@ -30,7 +30,43 @@
     }
   </style>
 </head>
+
+
+
 <body>
+<!-- Add the Twitter feeds panel on the left side -->
+   <!-- Add the Twitter feeds panel on the left side -->
+    <!-- <div id="twitter-panel" style="position: fixed; top: 0; left: 0; width: 300px; height: 100%; background-color: #f7f7f7; overflow: scroll;">
+        
+        
+        <a class="twitter-timeline" href="https://twitter.com/shailjaThakur3">Tweets by shailjaThakur3</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    </div> -->
+
+    <!-- <div id="twitter-panel" style="position: fixed; top: 0; left: 0; width: 300px; height: 100%; background-color: #f7f7f7; overflow: scroll;">
+   
+    <a class="twitter-timeline" href="https://twitter.com/shailjaThakur3" data-tweet-limit="10" data-chrome="noheader nofooter noscrollbar">Tweets by shailjaThakur3</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+ -->
+
+  <div id="twitter-panel">
+  <div id="tweets-container"></div>
+</div>
+
+<script>
+  fetch('/tweets')
+    .then(response => response.json())
+    .then(data => {
+      const tweetsContainer = document.getElementById('tweets-container');
+      data.tweets.forEach(tweet => {
+        const tweetElement = document.createElement('div');
+        tweetElement.textContent = `${tweet.user}: ${tweet.text} (${tweet.created_at})`;
+        tweetsContainer.appendChild(tweetElement);
+      });
+    })
+    .catch(error => console.error('Error fetching tweets:', error));
+</script>
+
+
   <div class="tabs">
     <span class="tab" onclick="window.location.href='index.html'">About</span>
     <span class="tab" onclick="window.location.href='research.html'">Research</span>
@@ -69,6 +105,7 @@
         <td style="padding:20px;width:100%;vertical-align:middle">
             <heading class="recent-updates">Recent Updates & Highlights</heading>
             <ul>
+                <li><strong>LLMs for hardware design</strong> for <span class="conference-name">Tutorial, MLCAD 2023</span></li>
                 <li><strong>Invited Reviewer</strong> for <span class="conference-name">WiCV at ICCV 2023</span></li>
                 <li><strong>Invited Reviewer</strong> for <span class="conference-name conference-name-alt">AAAI 2023</span></li>
                 <li><strong>Nominated for Best paper award</strong> Benchmarking LLM for Verilog RTL generation <span class="conference-name conference-name-alt">DATE'23</span></li>
@@ -80,6 +117,7 @@
 </tbody></table>
 
 </body>
+
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   <tbody>
     <tr>
