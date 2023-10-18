@@ -30,24 +30,16 @@
     }
 
     .tweet-fixed-position {
-            position: fixed;
-            max-width: 300px;  
+            position: fixed;   /* This will make the tweet box fixed on the viewport */
+            top: 5%;          /* Adjust as needed for vertical positioning */
+            right: 20px;       /* Distance from the right side of the screen */
+            max-width: 300px;  /* Adjust as needed for width */
             border: 1px solid #e1e4e8;
             padding: 20px;
             background-color: #f6f8fa;
-            overflow: auto;
-            z-index: 999;
-            max-height: 60%; 
-        }
-
-        .right-tweet {
-            top: 20%;
-            right: 20px;
-        }
-
-        .left-tweet {
-            top: 20%;
-            left: 20px; 
+            overflow: auto;    /* In case the content is larger than the box */
+            max-height: 80%;  /* Adjust as needed for height */
+            z-index: 999;      /* Ensure it's above other content */
         }
 
   </style>
