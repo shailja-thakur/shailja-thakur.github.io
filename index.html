@@ -29,18 +29,22 @@
       }
     }
 
-    .tweet-fixed-position {
-            position: fixed;   /* This will make the tweet box fixed on the viewport */
-            top: 5%;          /* Adjust as needed for vertical positioning */
-            right: 20px;       /* Distance from the right side of the screen */
-            max-width: 300px;  /* Adjust as needed for width */
-            border: 1px solid #e1e4e8;
-            padding: 20px;
-            background-color: #f6f8fa;
-            overflow: auto;    /* In case the content is larger than the box */
-            max-height: 80%;  /* Adjust as needed for height */
-            z-index: 999;      /* Ensure it's above other content */
-        }
+    .tweet-container {
+    position: fixed;   /* This will make the tweet box fixed on the viewport */
+    top: 3%;          /* Adjust as needed for vertical positioning */
+    right: 80px;      /* Distance from the right side of the screen */
+    max-width: 300px;  /* Adjust as needed for width */
+    max-height: 70%; /* adjust this as needed */
+    overflow: auto;    /* In case the content is larger than the box */
+    z-index: 999;      /* Ensure it's above other content */
+}
+
+.single-tweet {
+    border: 1px solid #e1e4e8;
+    padding: 20px;
+    background-color: #f6f8fa;
+    margin-bottom: 10px; /* Creates space between the tweets */
+}
 
   </style>
 </head>
@@ -142,13 +146,32 @@
 </table>
 
 <!-- Twitter Embed outside of table, positioned to the right -->
-    <div class="tweet-fixed-position">
+    <!-- <div class="tweet-fixed-position">
         <blockquote class="twitter-tweet">
                                 <p lang="en" dir="ltr">we *didnt* find evidence of bias on race &amp; gender, but for some models (Claude), we found large drops in selection rate on resumes w/ mat. leave vs. the identical resume w/out (&gt;15%), and same with political affiliation (&gt;30%). 2/n <a href="https://t.co/ed1uQrFJR3">pic.twitter.com/ed1uQrFJR3</a></p>&mdash; Siddharth Garg 🌈 (@sg1753) <a href="https://twitter.com/sg1753/status/1711840414246822314?ref_src=twsrc%5Etfw">October 10, 2023</a>
                             </blockquote>
         <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
     </div>
+ -->
+<!-- Twitter Embed outside of table, positioned to the right -->
+<div class="tweet-container">
 
+    <!-- First tweet -->
+    <div class="single-tweet">
+         <blockquote class="twitter-tweet">
+                                <p lang="en" dir="ltr">we *didnt* find evidence of bias on race &amp; gender, but for some models (Claude), we found large drops in selection rate on resumes w/ mat. leave vs. the identical resume w/out (&gt;15%), and same with political affiliation (&gt;30%). 2/n <a href="https://t.co/ed1uQrFJR3">pic.twitter.com/ed1uQrFJR3</a></p>&mdash; Siddharth Garg 🌈 (@sg1753) <a href="https://twitter.com/sg1753/status/1711840414246822314?ref_src=twsrc%5Etfw">October 10, 2023</a>
+                            </blockquote>
+    </div>
+
+    <!-- Second tweet immediately below the first -->
+    <div class="single-tweet">
+        <blockquote class="twitter-tweet">
+            <p lang="en" dir="ltr">The Verilog dataset and trained CodeGen models (aside from 16B which seems to be missing?) are up on Shailja&#39;s Huggingface Hub page now: <a href="https://t.co/oONyLwMVU9">https://t.co/oONyLwMVU9</a></p>&mdash; Brendan Dolan-Gavitt (@moyix) <a href="https://twitter.com/moyix/status/1606102102564114432?ref_src=twsrc%5Etfw">December 23, 2022</a>
+        </blockquote>
+    </div>
+
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
 
 
 </body>
