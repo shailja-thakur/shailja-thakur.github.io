@@ -28,28 +28,6 @@
         text-align: left;
       }
     }
-
-    .tweet-fixed-position {
-            position: fixed;
-            max-width: 300px;  
-            border: 1px solid #e1e4e8;
-            padding: 20px;
-            background-color: #f6f8fa;
-            overflow: auto;
-            z-index: 999;
-            max-height: 60%; 
-        }
-
-        .right-tweet {
-            top: 20%;
-            right: 20px;
-        }
-
-        .left-tweet {
-            top: 20%;
-            left: 20px; 
-        }
-
   </style>
 </head>
 
@@ -57,11 +35,11 @@
 
 <body>
 
- <!--  <div id="twitter-panel">
+  <div id="twitter-panel">
   <div id="tweets-container"></div>
-</div> -->
+</div>
 
-<!-- <script>
+<script>
   fetch('/tweets')
     .then(response => response.json())
     .then(data => {
@@ -74,7 +52,7 @@
     })
     .catch(error => console.error('Error fetching tweets:', error));
 </script>
- -->
+
 
   <div class="tabs">
     <span class="tab" onclick="window.location.href='index.html'">About</span>
@@ -104,7 +82,23 @@
       </p>
 
 
+      <!-- Embedding the Provided Twitter Post -->
+        <div style="margin-top: 20px;">
+            <blockquote class="twitter-tweet">
+                <p lang="en" dir="ltr">In new work, we investigate bias in LLM-based hiring tools (gender/race/maternity gap/political aff.) via a randomized controlled experiment. Are SOTA LLMs biased? yes and no 1/n (<a href="https://t.co/t45GbdtSnC">https://t.co/t45GbdtSnC</a>)
+                    <a href="https://twitter.com/FabianAndresGro?ref_src=twsrc%5Etfw">@FabianAndresGro</a>
+                    <a href="https://twitter.com/VeldandaAkshaj?ref_src=twsrc%5Etfw">@VeldandaAkshaj</a>
+                    <a href="https://twitter.com/ichthys101?ref_src=twsrc%5Etfw">@ichthys101</a>
+                    <a href="https://twitter.com/kiwihammond?ref_src=twsrc%5Etfw">@kiwihammond</a>
+                    <a href="https://twitter.com/shailjaThakur3?ref_src=twsrc%5Etfw">@shailjaThakur3</a>
+                    <a href="https://t.co/k46We56vNj">pic.twitter.com/k46We56vNj</a>
+                </p>&mdash; Siddharth Garg 🌈 (@sg1753)
+                <a href="https://twitter.com/sg1753/status/1711839048644366764?ref_src=twsrc%5Etfw">October 10, 2023</a>
+            </blockquote>
+            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </div>
 
+     
     </div>
   </td>
           </tr>
@@ -129,7 +123,7 @@
     <!-- Rest of your existing table content -->
 </tbody></table>
 
-
+</body>
 
 <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
   <tbody>
@@ -149,15 +143,5 @@
 
 </table>
 
-<!-- Twitter Embed outside of table, positioned to the right -->
-    <div class="tweet-fixed-position">
-        <blockquote class="twitter-tweet">
-                                <p lang="en" dir="ltr">we *didnt* find evidence of bias on race &amp; gender, but for some models (Claude), we found large drops in selection rate on resumes w/ mat. leave vs. the identical resume w/out (&gt;15%), and same with political affiliation (&gt;30%). 2/n <a href="https://t.co/ed1uQrFJR3">pic.twitter.com/ed1uQrFJR3</a></p>&mdash; Siddharth Garg 🌈 (@sg1753) <a href="https://twitter.com/sg1753/status/1711840414246822314?ref_src=twsrc%5Etfw">October 10, 2023</a>
-                            </blockquote>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
 
-
-
-</body>
 </html>
