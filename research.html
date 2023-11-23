@@ -38,6 +38,50 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+          <tr onmouseout="hiring_stop()" onmouseover="hiring_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='hiring_image'>
+                  <img src='images/hiring2.png' width="180"></div>
+                <img src='images/hiring1.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function hiring_start() {
+                  document.getElementById('hiring_image').style.opacity = "1";
+                }
+
+                function hiring_stop() {
+                  document.getElementById('hiring_image').style.opacity = "0";
+                }
+                hiring_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2310.05135">
+                <papertitle>Are Emily and Greg Still More Employable than Lakisha and Jamal? Investigating Algorithmic Hiring Bias in the Era of ChatGPT
+</papertitle>
+              </a>
+              <br>
+              <a href="https://scholar.google.com/citations?user=NgJt0yQAAAAJ&hl=en">Akshaj Kumar Veldanda</a>,
+              <strong>Fabian Grob</strong>,
+              <strong>Shailja Thakur</strong>,
+              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>,
+              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>,
+              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>,
+              <a href="https://scholar.google.com/citations?user=Yf8OqQQAAAAJ&hl=en/">Siddharth Garg</a>
+              <br>
+              <em>NeurIPS &nbsp <font color="red"><strong>(FoMo Workshop)</strong></font></em>, 
+              2023
+              <br>
+              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
+              
+              <p></p>
+              <p>
+              This project is evaluating large language models like GPT-3.5, Bard, and Claude for bias in resume screening tasks. Specifically, it is testing these models on matching resumes to job categories and summarizing resumes, while looking for biases related to gender, race, pregnancy status, and political affiliation. The goal is to measure the extent of algorithmic bias in AI systems being considered for automated hiring workflows.
+              </p>
+            </td>
+          </tr>
+
           <tr onmouseout="mleda_stop()" onmouseover="mleda_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
