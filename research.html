@@ -38,6 +38,101 @@
         </tbody></table>
         <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+
+          <tr onmouseout="mcts_stop()" onmouseover="mcts_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='mcts_image'>
+                  <img src='images/selection.png' width="180"></div>
+                <img src='images/rollout.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function mcts_start() {
+                  document.getElementById('mcts_image').style.opacity = "1";
+                }
+
+                function mcts_stop() {
+                  document.getElementById('mcts_image').style.opacity = "0";
+                }
+                mcts_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/pdf/2402.03289">
+                <papertitle>MakeEvery MoveCount: LLM-based High-Quality RTL Code Generation Using MCTS</papertitle>
+              </a>
+              <br>
+              <strong>Matthew DeLorenzo</strong>
+              <a href="https://scholar.google.com/citations?user=_7dNuMwAAAAJ&hl=en">Animesh Basak Chowdhury</a>,
+              <a href="https://scholar.google.com/citations?user=p1NWxdkAAAAJ&hl=en/">Vasudev Gohil</a>,
+              <a href="https://scholar.google.com/citations?user=bjC4g_MAAAAJ&hl=en&oi=ao/">Shailja Thakur</a>,
+              <a href="https://scholar.google.com/citations?user=Yf8OqQQAAAAJ&hl=en/">Siddharth Garg</a>,
+              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>
+              <a href="https://scholar.google.com/citations?user=E8vzlYcAAAAJ&hl=en/">Jeyavijayan Rajendran</a>
+              
+              <br>
+              <em>ICCAD &nbsp <font color="red"><strong>Accepted as <em>Work In Progress, 2024</em></strong></font></em>, 
+              2023
+              <br>
+              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
+              
+              <p></p>
+              <p>
+                This project integrates Monte Carlo tree-search for lookahead with an automated transformer decoding algorithm, guiding the transformer to produce compilable, functionally correct, and PPA-optimized code.
+          
+              </p>
+            </td>
+          </tr>
+
+
+
+
+
+
+          <tr onmouseout="autochip_stop()" onmouseover="autochip_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                <div class="two" id='autochip'>
+                  <img src='images/llm_gen.png' width="180"></div>
+                <img src='images/llm_feedback.png' width="180">
+              </div>
+              <script type="text/javascript">
+                function autochip_start() {
+                  document.getElementById('autochip').style.opacity = "1";
+                }
+
+                function autochip_stop() {
+                  document.getElementById('autochip').style.opacity = "0";
+                }
+                hiring_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2311.04887">
+                <papertitle>AutoChip: Automating HDL Generation Using LLM Feedback</papertitle>
+              </a>
+              <br>
+              <strong>Shailja Thakur</strong>
+              <a href="https://scholar.google.com/citations?user=QOd5mRIAAAAJ&hl=en">Jason Blocklove</a>,
+              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>,
+              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>,
+              <a href="https://scholar.google.com/citations?user=Yf8OqQQAAAAJ&hl=en/">Siddharth Garg</a>,
+              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>
+              
+              <br>
+              <em>MLCAD &nbsp <font color="red"><strong>Accepted in the Conference at SnowBird, Utah 2024</strong></font></em>, 
+              2023
+              <br>
+              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
+              
+              <p></p>
+              <p>
+              This project evaluate the ability of LLMs to generate functionally correct HDL models by combining the interactive capabilities of LLMs and the output from Verilog simulations to generate Verilog modules. The goal is to generate accurate Verilog code without human intervention.
+              </p>
+            </td>
+          </tr>
+
+
           <tr onmouseout="hiring_stop()" onmouseover="hiring_start()">
             <td style="padding:20px;width:25%;vertical-align:middle">
               <div class="one">
