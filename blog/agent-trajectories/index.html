@@ -12,18 +12,18 @@
 <p>Here is what the trace files look like up close. These are real trajectories from SWE-Agent running Claude 3.5 Sonnet -- one of the earlier submissions, picked because its verbose reasoning traces give the clearest window into what the agent is actually doing. (The quantitative patterns hold across current SOTA models -- Opus 4.5, GPT-5, DeepSeek-V3 -- as I will show below.) Both use the same framework and model, but produce different outcomes.</p>
 <p><strong>A successful run</strong> (django__django-14672, resolved in 18 steps):</p>
 <blockquote>
-<p><strong>Step 1:</strong> "Let's start by locating the file where the ManyToManyRel class is defined..."
-<strong>Step 5:</strong> "I see now. The ManyToManyRel class is imported from the reverse_related module..."
-<strong>Step 12:</strong> "Great, we can see that make_hashable is already imported on line 14..."
-<strong>Step 15:</strong> "It looks like we're in the Django source code repository, not a Django project. In this case, we should use Django's runtests.py..."</p>
+<p><strong>Step 1:</strong> "Let's start by locating the file where the ManyToManyRel class is defined..."</p>
+<p><strong>Step 5:</strong> "I see now. The ManyToManyRel class is imported from the reverse_related module..."</p>
+<p><strong>Step 12:</strong> "Great, we can see that make_hashable is already imported on line 14..."</p>
+<p><strong>Step 15:</strong> "It looks like we're in the Django source code repository, not a Django project. In this case, we should use Django's runtests.py..."</p>
 </blockquote>
 <p>Every step introduces something new -- a new file, a new class, a new hypothesis. The agent's vocabulary <em>grows</em>, consistent with it progressively learning the codebase.</p>
 <p><strong>A stuck run</strong> (django__django-15128, failed after 56 steps):</p>
 <blockquote>
-<p><strong>Step 47:</strong> "The changes look good. The script has been simplified and should now focus on reproducing the core issue..."
-<strong>Step 49:</strong> "The changes look good. The script now includes a proper app configuration and the models are associated with the 'reproduce'..."
-<strong>Step 51:</strong> "The changes look good. The script now includes a proper app configuration and registers the app dynamically..."
-<strong>Step 53:</strong> "The changes look good. The script has been simplified and should now focus on reproducing the core issue..."</p>
+<p><strong>Step 47:</strong> "The changes look good. The script has been simplified and should now focus on reproducing the core issue..."</p>
+<p><strong>Step 49:</strong> "The changes look good. The script now includes a proper app configuration and the models are associated with the 'reproduce'..."</p>
+<p><strong>Step 51:</strong> "The changes look good. The script now includes a proper app configuration and registers the app dynamically..."</p>
+<p><strong>Step 53:</strong> "The changes look good. The script has been simplified and should now focus on reproducing the core issue..."</p>
 </blockquote>
 <p><code class="inline">"The changes look good."</code> Four times. While looping on the same error. The last 15 actions are: edit, run, error, edit, run, error -- with nearly identical code each time. Only 127 unique words across 2,195 total. The agent has been stuck for 30+ steps and <em>shows no sign of recognizing it.</em></p>
 <p>Look at the hedging language in that stuck trajectory. The agent reads like it senses something is off. But it cannot break the loop. It just keeps saying <code class="inline">"the changes look good"</code> like repeating it might make it true.</p>
