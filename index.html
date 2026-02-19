@@ -1,240 +1,47 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <title>Shailja Thakur - About</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shailja Thakur</title>
+  <link rel="stylesheet" href="stylesheet.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
-  <style>
-    .tabs {
-      text-align: center;
-      font-size: 24px;
-      padding: 10px;
-      margin: 20px;
-    }
-    .tab {
-      margin: 0 15px;
-      cursor: pointer;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-   @media (max-width: 768px) {
-      .profile-image {
-        float: right;
-        margin-left: 20px;
-        margin-bottom: 20px;
-      }
-      .text-content {
-        text-align: left;
-      }
-    }
-
-    .tweet-container {
-    position: fixed;   /* This will make the tweet box fixed on the viewport */
-    top: 3%;          /* Adjust as needed for vertical positioning */
-    right: 20px;      /* Distance from the right side of the screen */
-    max-width: 300px;  /* Adjust as needed for width */
-    max-height: 70%; /* adjust this as needed */
-    overflow: auto;    /* In case the content is larger than the box */
-    z-index: 999;      /* Ensure it's above other content */
-}
-
-.single-tweet {
-    border: 1px solid #e1e4e8;
-    padding: 20px;
-    background-color: #f6f8fa;
-    margin-bottom: 10px; /* Creates space between the tweets */
-}
-
-  </style>
 </head>
-
-
-
 <body>
 
- <!--  <div id="twitter-panel">
-  <div id="tweets-container"></div>
-</div> -->
+  <nav class="nav">
+    <a href="index.html" class="active">About</a>
+    <a href="research.html">Research</a>
+    <a href="activity.html">Activity</a>
+    <a href="blog/index.html">Blog</a>
+  </nav>
 
-<!-- <script>
-  fetch('/tweets')
-    .then(response => response.json())
-    .then(data => {
-      const tweetsContainer = document.getElementById('tweets-container');
-      data.tweets.forEach(tweet => {
-        const tweetElement = document.createElement('div');
-        tweetElement.textContent = `${tweet.user}: ${tweet.text} (${tweet.created_at})`;
-        tweetsContainer.appendChild(tweetElement);
-      });
-    })
-    .catch(error => console.error('Error fetching tweets:', error));
-</script>
- -->
+  <main class="container">
 
-  <div class="tabs">
-    <span class="tab" onclick="window.location.href='index.html'">About</span>
-    <span class="tab" onclick="window.location.href='research.html'">Research</span>
-  </div>
-  <!-- Add the content before the Research heading here -->
-  <!-- Everything before the Research section goes here -->
-<table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-           <td class="text-content" style="padding:2.5%;width:63%;vertical-align:middle;text-align:center;">
-    <p>
-      <name>Shailja Thakur</name>
-    </p>
-    <p style="text-align:left;"> <!-- Restore left alignment for the remaining text -->
-      I am  Research Scientist at IBM Research where my focus is on LLMs for Code, Code Explanation, Reasoning & Alignment. My primary research focuses on applying AI to develop efficient, reliable, and transparent systems. Alongside, I work on AI for social Impact. I have a PhD from <strong>University of Waterloo</strong> advised by <a href="https://uwaterloo.ca/embedded-software-group/people-profiles/sebastian-fischmeister">Sebastian Fiscmeister</a> and a PostDoc from <strong>New York University</stong>, working with <a href="https://engineering.nyu.edu/faculty/siddharth-garg">Siddharth Garg</a> and <a href="https://cyber.nyu.edu/profile/ramesh-karri/">Ramesh Karri</a>.
-    </p>
-  </td>
-  <!-- <td style="padding:2.5%;width:40%;max-width:40%;vertical-align:middle;"> 
-    <div style="text-align:center;"> 
-      <a href="images/ShailjaPhoto.JPG"><img class="profile-image" style="width:60%;max-width:60%" alt="profile photo" src="images/ShailjaPhoto.JPG" class="hoverZoomLink"></a>
-      <p style="text-align:center">
-        <a href="data/shailja_cv_v3.pdf" style="font-size: 25px;">CV</a> <span style="font-size: 25px;"> | </span>
-        <a href="data/ShailjaThakur-bio.txt" style="font-size: 25px;">Bio</a>
-      </p>
-
-
-
-    </div>
-  </td>
- -->
-
-  <td style="padding:2.5%;width:40%;max-width:40%;vertical-align:middle;"> <!-- Align content in the middle -->
-  <div style="text-align:center;"> <!-- Center-aligned div wrapper -->
-    <a href="images/ShailjaPhoto.JPG"><img class="profile-image" style="width:60%;max-width:60%" alt="profile photo" src="images/ShailjaPhoto.JPG" class="hoverZoomLink"></a>
-    <p style="text-align:center; margin-top:0px;"> <!-- Adjust the margin here -->
-      <a href="https://www.linkedin.com/in/shailjathakur"><img src="images/linkedin.png" alt="Linkedin" width="30" style="margin-right:0px;"></a>
-      <a href="https://scholar.google.com/citations?user=bjC4g_MAAAAJ"><img src="images/google-scholar.png" alt="Google Scholar" width="30" style="margin-right:0px;"></a>
-      <a href="https://twitter.com/shailjaThakur3"><img src="images/X.png" alt="Twitter" width="30" style="margin-right:0px;"></a>
-      <a href="https://github.com/shailja-thakur/"><img src="images/github-mark.png" alt="Github" width="30" style="margin-right:0px;"></a>
-      <a href="https://huggingface.co/shailja"><img src="images/hf-logo.png" alt="HuggingFace" width="40"></a>
-    </p>
-  </div>
-</td>
-
-
-          </tr>
-        </tbody></table>
-
-
-
-
-
-
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-        <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-                <heading class="recent-updates">Recent Updates & Highlights</heading>
-                <ul>
-
-                  <!-- New list items -->
-                    <li>Serving on Program Committee for <strong>AAAI 2025</strong>, Artificial Intelligence for Social Impact Track Program Committee</li>
-                    <li>Serving on Program Committee for <strong>WiML 2024</strong></li>
-                    <li>Serving on Program Committee for <strong>EMNLP 2024</strong>, Workshop for Multilingual Representations (MRL)</li>
-
-                    <!-- Existing list items -->
-                    
-                    <li>Our paper <strong>VeriGen</strong> got accepted in <strong>ACM TODAES</strong></li>
-                    <li>Our two papers on <strong>(1) bug fixing and, (2) assertion generation using LLM</strong> got accepted in <strong>IEEE TIFS</strong></li>
-                    <li>Invited Talk, <strong>Speaker Series: AI and Security CoP</strong>, Talk title: Automating Verilog RTL Code Generation with Large Language Models <a target="_blank">Intel, New York 2023</a></li>
-                    <li><strong>LLMs for hardware design</strong>, Tutorial Title: Intersection of HW, Security & Large Language Models @<a href="https://mlcad-workshop.org/" target="_blank">MLCAD 2023</a></li>
-                    <li><strong>Invited Reviewer</strong> for <a href="https://iccv2023.thecvf.com/" target="_blank">WiCV at ICCV 2023</a></li>
-                    <li><strong>Invited Reviewer</strong> for <a href="https://aaai.org/Conferences/AAAI-23/" target="_blank">AAAI 2023</a></li>
-                    <li><strong>Nominated for Best paper award</strong> Benchmarking LLM for Verilog RTL generation <a href="https://www.date-conference.com/" target="_blank">DATE 2023</a></li>
-                    <li><strong>Travel grant</strong> for <span class="conference-name conference-name-alt">DATE 2023</span></li>
-                    <li><strong>Granted Post-Doctoral Fellowship</strong> in the <strong>NSF National AI Institute for Edge Computing</strong> Leveraging Next Generation Networks (Athena) 2022 </li>
-                    
-                </ul>
-            </td>
-        </tr>
-        <!-- Rest of your existing table content -->
-    </tbody>
-</table>
-
-
-<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
-    <tbody>
-        <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-                <heading class="recent-updates">Invited Talks, Research Seminars & Workshop Sessions</heading>
-                <ul>
-                    <li><strong>IIIT Hyderabad</strong>, Talk Title: Large Language MOdel for Hardware Design Automation, September 19, 2024</li>
-                    <li><strong>PALS Industrial Assisted Lecture Series</strong>, Talk Title: Building Successful LLM Applications, Power of High-Quality Data, August 27, 2024</li>
-                    <li><strong>MSRIT Invited Talk</strong>, Topic: Large Language Models for Code Generation, Reasoning and Preference Alignment</li>
-                    <li><strong>Invited Seminar</strong> at <strong>CDS@IISc, CSE Dept@IIT Kanpur, IISER Pune, IIIT Delhi, IIT Mandi</strong> on <em>Towards Secure, Interpretable, and Scalable Machine Learning Applications in Cyber-Physical Systems</em>, Feb-September 2024</li>
-                    <li>Invited Talk, <strong>Speaker Series: AI and Security CoP</strong>, Talk title: Automating Verilog RTL Code Generation with Large Language Models <a target="_blank">Intel, New York 2023</a></li>
-                    <li><strong>LLMs for hardware design</strong>, Tutorial Title: Intersection of HW, Security & Large Language Models @<a href="https://mlcad-workshop.org/" target="_blank">MLCAD 2023</a></li>
-                    <li><strong>CEDAR, INRIA and Ecole Polytechnique</strong> on <em>Title: Security and interpretability in automotive systems</em>, January 2022</li>
-                    <li><strong>The School of Computing and Augmented Intelligence, Arizona State University</strong> <em>Title: Security and interpretability in automotive systems</em>, October 2021</li>
-                    <li><Strong>the Cyber-Physical Systems Lab, Duke Universiy</strong> on <em>Title: Security and interpretability in automotive systems</em>, November 2021</li>
-
-                </ul>
-            </td>
-        </tr>
-        <!-- Rest of your existing table content -->
-    </tbody>
-</table>
-
-
-
-<table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-  <tbody>
-    <tr>
-      <td align="center" style="padding-bottom:0;">
-        <h2>Contact & Presence</h2>
-        <p style="text-align:center; font-size:16px; line-height:2.2;">
-          <a href="mailto:shailja.thakur90@gmail.com">shailja.thakur90@gmail.com</a> &nbsp;·&nbsp;
-          <a href="https://twitter.com/shailjaThakur3">@shailjaThakur3</a> &nbsp;·&nbsp;
-          <a href="https://github.com/shailja-thakur/">GitHub</a> &nbsp;·&nbsp;
-          <a href="https://huggingface.co/shailja">HuggingFace</a> &nbsp;·&nbsp;
-          <a href="https://discord.com/channels/@shailjathakur">Discord</a>
+    <section class="profile">
+      <div class="profile-text">
+        <h1>Shailja Thakur</h1>
+        <div class="affiliation">Research Scientist, IBM Research</div>
+        <p class="bio">
+          I work on making agentic AI systems reliable enough for enterprise deployment. My current focus is on two problems: <strong>context optimization</strong>&mdash;how agents decide what to retain and discard across long, multi-step workflows&mdash;and <strong>automated debugging</strong>&mdash;systematically diagnosing why and where agent pipelines fail.
         </p>
-      </td>
-    </tr>
-  </tbody>
+        <p class="bio">
+          Before this, I pioneered the use of Large Language Models for automating hardware design (Verilog code generation, bug repair, security assertions)&mdash;work that received a <a href="https://dl.acm.org/journal/todaes/honors-and-awards">Best Paper Award from ACM TODAES</a>. My PhD at the <strong>University of Waterloo</strong> (with <a href="https://uwaterloo.ca/embedded-software-group/people-profiles/sebastian-fischmeister">Sebastian Fischmeister</a>) focused on security and interpretability in automotive systems. I did my PostDoc at <strong>NYU</strong> with <a href="https://engineering.nyu.edu/faculty/siddharth-garg">Siddharth Garg</a> and <a href="https://cyber.nyu.edu/profile/ramesh-karri/">Ramesh Karri</a>.
+        </p>
+      </div>
+      <div class="profile-photo">
+        <a href="images/ShailjaPhoto.JPG"><img src="images/ShailjaPhoto.JPG" alt="Shailja Thakur"></a>
+        <div class="links">
+          <a href="https://www.linkedin.com/in/shailjathakur"><img src="images/linkedin.png" alt="LinkedIn"></a>
+          <a href="https://scholar.google.com/citations?user=bjC4g_MAAAAJ"><img src="images/google-scholar.png" alt="Scholar"></a>
+          <a href="https://twitter.com/shailjaThakur3"><img src="images/X.png" alt="X"></a>
+          <a href="https://github.com/shailja-thakur/"><img src="images/github-mark.png" alt="GitHub"></a>
+          <a href="https://huggingface.co/shailja"><img src="images/hf-logo.png" alt="HuggingFace" class="hf-icon"></a>
+        </div>
+      </div>
+    </section>
 
-</table>
-
-
-
-
-
-
-<!-- Twitter Embed outside of table, positioned to the right -->
-    <!-- <div class="tweet-fixed-position">
-        <blockquote class="twitter-tweet">
-                                <p lang="en" dir="ltr">we *didnt* find evidence of bias on race &amp; gender, but for some models (Claude), we found large drops in selection rate on resumes w/ mat. leave vs. the identical resume w/out (&gt;15%), and same with political affiliation (&gt;30%). 2/n <a href="https://t.co/ed1uQrFJR3">pic.twitter.com/ed1uQrFJR3</a></p>&mdash; Siddharth Garg 🌈 (@sg1753) <a href="https://twitter.com/sg1753/status/1711840414246822314?ref_src=twsrc%5Etfw">October 10, 2023</a>
-                            </blockquote>
-        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-    </div>
- -->
-<!-- Twitter Embed outside of table, positioned to the right -->
-<!-- <div class="tweet-container">
-
-    
-    <div class="single-tweet">
-         <blockquote class="twitter-tweet">
-                                <p lang="en" dir="ltr">we *didnt* find evidence of bias on race &amp; gender, but for some models (Claude), we found large drops in selection rate on resumes w/ mat. leave vs. the identical resume w/out (&gt;15%), and same with political affiliation (&gt;30%). 2/n <a href="https://t.co/ed1uQrFJR3">pic.twitter.com/ed1uQrFJR3</a></p>&mdash; Siddharth Garg 🌈 (@sg1753) <a href="https://twitter.com/sg1753/status/1711840414246822314?ref_src=twsrc%5Etfw">October 10, 2023</a>
-                            </blockquote>
-    </div>
-
-    
-    <div class="single-tweet">
-        <blockquote class="twitter-tweet">
-            <p lang="en" dir="ltr">The Verilog dataset and trained CodeGen models (aside from 16B which seems to be missing?) are up on Shailja&#39;s Huggingface Hub page now: <a href="https://t.co/oONyLwMVU9">https://t.co/oONyLwMVU9</a></p>&mdash; Brendan Dolan-Gavitt (@moyix) <a href="https://twitter.com/moyix/status/1606102102564114432?ref_src=twsrc%5Etfw">December 23, 2022</a>
-        </blockquote>
-    </div>
-
-    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</div> -->
-
+  </main>
 
 </body>
 </html>

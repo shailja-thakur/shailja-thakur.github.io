@@ -1,690 +1,169 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Shailja Thakur - Research</title>
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <link rel="stylesheet" href="stylesheet.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
-  <style>
-    .tabs {
-      text-align: center;
-      font-size: 24px;
-      padding: 10px;
-      margin: 20px;
-    }
-    .tab {
-      margin: 0 15px;
-      cursor: pointer;
-      font-weight: bold;
-      text-decoration: underline;
-    }
-  </style>
 </head>
 <body>
-  <div class="tabs">
-    <span class="tab" onclick="window.location.href='index.html'">About</span>
-    <span class="tab" onclick="window.location.href='research.html'">Research</span>
-  </div>
-          <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-              <p>
-                <!-- I'm interested in language models, cyber-physical systems, ML Interpretability, Security & Privacy, Embedded Systems.  -->
-                Much of my research is about applying machine learning in embedded systems to bridge the gap, addressing the challenges in downstream tasks, security, bug detection, and explanation. Representative papers are highlighted.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
 
+  <nav class="nav">
+    <a href="index.html">About</a>
+    <a href="research.html" class="active">Research</a>
+    <a href="activity.html">Activity</a>
+    <a href="blog/index.html">Blog</a>
+  </nav>
 
-          <tr onmouseout="mcts_stop()" onmouseover="mcts_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='mcts_image'>
-                  <img src='images/selection.png' width="180"></div>
-                <img src='images/rollout.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function mcts_start() {
-                  document.getElementById('mcts_image').style.opacity = "1";
-                }
+  <main class="container">
 
-                function mcts_stop() {
-                  document.getElementById('mcts_image').style.opacity = "0";
-                }
-                mcts_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2402.03289">
-                <papertitle>MakeEvery MoveCount: LLM-based High-Quality RTL Code Generation Using MCTS</papertitle>
-              </a>
-              <br>
-              <strong>Matthew DeLorenzo</strong>
-              <a href="https://scholar.google.com/citations?user=_7dNuMwAAAAJ&hl=en">Animesh Basak Chowdhury</a>,
-              <a href="https://scholar.google.com/citations?user=p1NWxdkAAAAJ&hl=en/">Vasudev Gohil</a>,
-              <a href="https://scholar.google.com/citations?user=bjC4g_MAAAAJ&hl=en&oi=ao/">Shailja Thakur</a>,
-              <a href="https://scholar.google.com/citations?user=Yf8OqQQAAAAJ&hl=en/">Siddharth Garg</a>,
-              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>
-              <a href="https://scholar.google.com/citations?user=E8vzlYcAAAAJ&hl=en/">Jeyavijayan Rajendran</a>
-              
-              <br>
-              <em>ICCAD &nbsp <font color="red"><strong>Accepted as <em>Work In Progress, 2024</em></strong></font></em>, 
-              2023
-              <br>
-              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
-              
-              <p></p>
-              <p>
-                This project integrates Monte Carlo tree-search for lookahead with an automated transformer decoding algorithm, guiding the transformer to produce compilable, functionally correct, and PPA-optimized code.
-          
-              </p>
-            </td>
-          </tr>
+    <section class="section">
+      <p>My work spans LLMs for code, agentic AI, hardware design automation, security, and interpretability.</p>
+    </section>
 
+    <div class="pub-list">
 
+      <div class="pub">
+        <span class="badge badge-journal">TODAES 2025</span>
+        <div class="pub-body">
+          <a href="https://arxiv.org/pdf/2411.11856" class="pub-title">Can EDA Tool Feedback Improve Verilog Generation by LLMs?</a>
+          <div class="pub-authors">Jason Blocklove, <strong>Shailja Thakur</strong>, Benjamin Tan, Hammond Pearce, Siddharth Garg, Ramesh Karri</div>
+          <div class="pub-links"><a href="https://arxiv.org/pdf/2411.11856">arXiv</a></div>
+        </div>
+      </div>
 
+      <div class="pub">
+        <span class="badge badge-journal">TODAES 2024</span>
+        <div class="pub-body">
+          <a href="https://arxiv.org/abs/2308.00708" class="pub-title">VeriGen: A Large Language Model for Verilog Code Generation</a>
+          <span class="pub-award">Best Paper Award</span>
+          <div class="pub-authors"><strong>Shailja Thakur</strong>, Baleegh Ahmad, Hammond Pearce, Benjamin Tan, Brendan Dolan-Gavitt, Ramesh Karri, Siddharth Garg</div>
+          <div class="pub-links"><a href="https://github.com/shailja-thakur/VGen">project</a> / <a href="https://huggingface.co/shailja">HuggingFace</a> / <a href="https://arxiv.org/abs/2308.00708">arXiv</a> / <a href="https://dl.acm.org/journal/todaes/honors-and-awards">award</a></div>
+        </div>
+      </div>
 
+      <div class="pub">
+        <span class="badge badge-journal">ACM TCPS 2022</span>
+        <div class="pub-body">
+          <a href="https://dl.acm.org/doi/10.1145/3571288" class="pub-title">CANOA: CAN Origin Authentication Through Power Side-Channel Monitoring</a>
+          <div class="pub-authors"><strong>Shailja Thakur</strong>, Carlos Moreno, Sebastian Fischmeister</div>
+          <div class="pub-links"><a href="https://github.com/shailja-thakur/CANMAP">project</a> / <a href="https://arxiv.org/abs/2006.06993">arXiv</a></div>
+        </div>
+      </div>
 
+      <div class="pub">
+        <span class="badge badge-journal">IEEE TIFS 2023</span>
+        <div class="pub-body">
+          <a href="https://arxiv.org/abs/2302.01215" class="pub-title">On Hardware Security Bug Code Fixes By Querying Large Language Models</a>
+          <div class="pub-authors">Baleegh Ahmad, <strong>Shailja Thakur</strong>, Benjamin Tan, Ramesh Karri, Hammond Pearce</div>
+          <div class="pub-links"><a href="https://arxiv.org/abs/2302.01215">arXiv</a></div>
+        </div>
+      </div>
 
-          <tr onmouseout="autochip_stop()" onmouseover="autochip_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='autochip'>
-                  <img src='images/llm_gen.png' width="180"></div>
-                <img src='images/llm_feedback.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function autochip_start() {
-                  document.getElementById('autochip').style.opacity = "1";
-                }
+      <div class="pub">
+        <span class="badge badge-journal">IEEE TIFS 2023</span>
+        <div class="pub-body">
+          <a href="https://arxiv.org/pdf/2306.14027" class="pub-title">LLM-assisted Generation of Hardware Assertions</a>
+          <div class="pub-authors">Rahul Kande, Hammond Pearce, Benjamin Tan, Brendan Dolan-Gavitt, <strong>Shailja Thakur</strong>, Ramesh Karri, Jeyavijayan Rajendran</div>
+          <div class="pub-links"><a href="https://arxiv.org/pdf/2306.14027">arXiv</a></div>
+        </div>
+      </div>
 
-                function autochip_stop() {
-                  document.getElementById('autochip').style.opacity = "0";
-                }
-                hiring_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2311.04887">
-                <papertitle>AutoChip: Automating HDL Generation Using LLM Feedback</papertitle>
-              </a>
-              <br>
-              <strong>Shailja Thakur</strong>
-              <a href="https://scholar.google.com/citations?user=QOd5mRIAAAAJ&hl=en">Jason Blocklove</a>,
-              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>,
-              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>,
-              <a href="https://scholar.google.com/citations?user=Yf8OqQQAAAAJ&hl=en/">Siddharth Garg</a>,
-              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>
-              
-              <br>
-              <em>MLCAD &nbsp <font color="red"><strong>Accepted in the Conference at SnowBird, Utah 2024</strong></font></em>, 
-              2023
-              <br>
-              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
-              
-              <p></p>
-              <p>
-              This project evaluate the ability of LLMs to generate functionally correct HDL models by combining the interactive capabilities of LLMs and the output from Verilog simulations to generate Verilog modules. The goal is to generate accurate Verilog code without human intervention.
-              </p>
-            </td>
-          </tr>
+      <div class="pub">
+        <span class="badge badge-conf">DAC 2024</span>
+        <div class="pub-body">
+          <a href="https://arxiv.org/abs/2311.04887" class="pub-title">AutoChip: Automating HDL Generation Using LLM Feedback</a>
+          <div class="pub-authors"><strong>Shailja Thakur</strong>, Jason Blocklove, Hammond Pearce, Benjamin Tan, Siddharth Garg, Ramesh Karri</div>
+          <div class="pub-links"><a href="https://arxiv.org/abs/2311.04887">arXiv</a></div>
+        </div>
+      </div>
 
+      <div class="pub">
+        <span class="badge badge-conf">ICCAD 2024</span>
+        <div class="pub-body">
+          <a href="https://arxiv.org/pdf/2402.03289" class="pub-title">Make Every Move Count: LLM-based High-Quality RTL Code Generation Using MCTS</a>
+          <div class="pub-authors">Matthew DeLorenzo, Animesh Basak Chowdhury, Vasudev Gohil, <strong>Shailja Thakur</strong>, Siddharth Garg, Ramesh Karri, Jeyavijayan Rajendran</div>
+          <div class="pub-links"><a href="https://arxiv.org/pdf/2402.03289">arXiv</a></div>
+        </div>
+      </div>
 
-          <tr onmouseout="hiring_stop()" onmouseover="hiring_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='hiring_image'>
-                  <img src='images/hiring2.png' width="180"></div>
-                <img src='images/hiring1.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function hiring_start() {
-                  document.getElementById('hiring_image').style.opacity = "1";
-                }
+      <div class="pub">
+        <span class="badge badge-conf">NeurIPS 2023</span>
+        <div class="pub-body">
+          <a href="https://arxiv.org/abs/2310.05135" class="pub-title">Are Emily and Greg Still More Employable than Lakisha and Jamal? Investigating Algorithmic Hiring Bias in the Era of ChatGPT</a>
+          <div class="pub-authors">Akshaj Kumar Veldanda, Fabian Grob, <strong>Shailja Thakur</strong>, Hammond Pearce, Benjamin Tan, Ramesh Karri, Siddharth Garg</div>
+          <div class="pub-links"><a href="https://arxiv.org/abs/2310.05135">arXiv</a></div>
+        </div>
+      </div>
 
-                function hiring_stop() {
-                  document.getElementById('hiring_image').style.opacity = "0";
-                }
-                hiring_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2310.05135">
-                <papertitle>Are Emily and Greg Still More Employable than Lakisha and Jamal? Investigating Algorithmic Hiring Bias in the Era of ChatGPT
-</papertitle>
-              </a>
-              <br>
-              <a href="https://scholar.google.com/citations?user=NgJt0yQAAAAJ&hl=en">Akshaj Kumar Veldanda</a>,
-              <strong>Fabian Grob</strong>,
-              <strong>Shailja Thakur</strong>,
-              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>,
-              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>,
-              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>,
-              <a href="https://scholar.google.com/citations?user=Yf8OqQQAAAAJ&hl=en/">Siddharth Garg</a>
-              <br>
-              <em>NeurIPS &nbsp <font color="red"><strong>(FoMo Workshop)</strong></font></em>, 
-              2023
-              <br>
-              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
-              
-              <p></p>
-              <p>
-              This project is evaluating large language models like GPT-3.5, Bard, and Claude for bias in resume screening tasks. Specifically, it is testing these models on matching resumes to job categories and summarizing resumes, while looking for biases related to gender, race, pregnancy status, and political affiliation. The goal is to measure the extent of algorithmic bias in AI systems being considered for automated hiring workflows.
-              </p>
-            </td>
-          </tr>
+      <div class="pub">
+        <span class="badge badge-conf">ICCAD 2023</span>
+        <div class="pub-body">
+          <a href="https://arxiv.org/abs/2310.10560" class="pub-title">Towards the ImageNets of ML4EDA</a>
+          <div class="pub-authors">Animesh Chowdhury, <strong>Shailja Thakur</strong>, Hammond Pearce, Ramesh Karri, Siddharth Garg</div>
+          <div class="pub-links"><a href="https://arxiv.org/abs/2310.10560">arXiv</a></div>
+        </div>
+      </div>
 
-          <tr onmouseout="mleda_stop()" onmouseover="mleda_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='mleda_image'>
-                  <img src='images/mleda2.png' width="180"></div>
-                <img src='images/mleda1.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function mleda_start() {
-                  document.getElementById('mleda_image').style.opacity = "1";
-                }
+      <div class="pub">
+        <span class="badge badge-conf">DATE 2023</span>
+        <div class="pub-body">
+          <a href="https://arxiv.org/abs/2212.11140" class="pub-title">Benchmarking Large Language Models for Automated Verilog RTL Code Generation</a>
+          <span class="pub-award">Nominated for Best Paper</span>
+          <div class="pub-authors"><strong>Shailja Thakur</strong>, Baleegh Ahmad, Zhenxing Fan, Hammond Pearce, Benjamin Tan, Ramesh Karri, Brendan Dolan-Gavitt, Siddharth Garg</div>
+          <div class="pub-links"><a href="https://github.com/shailja-thakur/VGen">project</a> / <a href="https://huggingface.co/shailja">HuggingFace</a> / <a href="https://arxiv.org/abs/2212.11140">arXiv</a></div>
+        </div>
+      </div>
 
-                function mleda_stop() {
-                  document.getElementById('mleda_image').style.opacity = "0";
-                }
-                mleda_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2308.00708">
-                <papertitle>Towards the Imagenets of ML4EDA</papertitle>
-              </a>
-              <br>
-              <a href="https://scholar.google.com/citations?user=DCeMBDKRwaQC&hl=en&oi=ao/">Animesh Chowdhury</a>,
-              <strong>Shailja Thakur</strong>,
-              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>,
-              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>,
-              <a href="https://scholar.google.com/citations?user=Yf8OqQQAAAAJ&hl=en/">Siddharth Garg</a>
-              <br>
-              <em>ICCAD &nbsp <font color="red"><strong>(Special Session Proposal)</strong></font></em>, 
-              2023
-              <br>
-              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
-              
-              <p></p>
-              <p>
-              This paper highlights the lack of standard datasets for ML-guided EDA tools in the journey from RTL to GDSII and introduces two high-quality datasets: Verigen, derived from GitHub and Verilog textbooks for Verilog code generation, and OpenABC-D, for logic synthesis tasks. The discussion encompasses challenges in dataset curation and growth, quality, security, and the application of specialized data augmentation tools for the hardware domain.
-              </p>
-            </td>
-          </tr>
+      <div class="pub">
+        <span class="badge badge-conf">DATE 2023</span>
+        <div class="pub-body">
+          <a href="https://arxiv.org/abs/2212.12101" class="pub-title">Security and Interpretability in Automotive Systems</a>
+          <div class="pub-authors"><strong>Shailja Thakur</strong>, Sebastian Fischmeister</div>
+          <div class="pub-links"><a href="https://arxiv.org/abs/2212.12101">arXiv</a></div>
+        </div>
+      </div>
 
-          <tr onmouseout="vgen_stop()" onmouseover="vgen_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='vgen_image'>
-                  <img src='images/vgen1.png' width="180"></div>
-                <img src='images/vgen2.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function vgen_start() {
-                  document.getElementById('vgen_image').style.opacity = "1";
-                }
+      <div class="pub">
+        <span class="badge badge-conf">ICPR 2020</span>
+        <div class="pub-body">
+          <a href="https://ieeexplore.ieee.org/abstract/document/9412303/" class="pub-title">Saliency-map based model explanation</a>
+          <div class="pub-authors"><strong>Shailja Thakur</strong>, Sebastian Fischmeister</div>
+          <div class="pub-links"><a href="https://github.com/shailja-thakur/explainability-project/">project</a> / <a href="https://ieeexplore.ieee.org/abstract/document/9412303">paper</a></div>
+        </div>
+      </div>
 
-                function vgen_stop() {
-                  document.getElementById('vgen_image').style.opacity = "0";
-                }
-                vgen_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2308.00708">
-                <papertitle>VeriGen: A Large Language Model for Verilog Code Generation</papertitle>
-              </a>
-              <br>
-              <strong>Shailja Thakur</strong>,
-              <a href="https://scholar.google.com/citations?user=DCeMBDKRwaQC&hl=en&oi=ao/">Baleegh Ahmad</a>,
-              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>,
-              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>,
-              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>,
-              <a href="https://scholar.google.com/citations?user=MzAxRscAAAAJ&hl=en/">Brendan Dolan-Gavitt</a>,
-              <a href="https://scholar.google.com/citations?user=Yf8OqQQAAAAJ&hl=en/">Siddharth Garg</a>
-              <br>
-              <em> &nbsp <font color="red"><strong>Just Accepted in ACM TODAES ( Transactions on Design Automation of Electronic Systems)</strong></font></em>,
-              2023
-              <br>
-              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
+      <div class="pub">
+        <span class="badge badge-conf">ICPR 2020</span>
+        <div class="pub-body">
+          <a href="https://arxiv.org/abs/2006.09504" class="pub-title">Generalizable Saliency map-based explanation</a>
+          <div class="pub-authors"><strong>Shailja Thakur</strong>, Sebastian Fischmeister</div>
+          <div class="pub-links"><a href="https://github.com/shailja-thakur/generalizable-saliency">project</a> / <a href="https://arxiv.org/abs/2006.09504">arXiv</a></div>
+        </div>
+      </div>
 
-              <a href="https://github.com/shailja-thakur/VGen">project page</a>
-              /
-              <a href="https://huggingface.co/shailja">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2308.00708">arXiv</a>
-              
-              <p></p>
-              <p>
-              This is the first study to comprehensively explore both commercial and open-source Large Language Models (LLMs) for their Verilog code generation capabilities. By comparing these with our in-house trained LLM for Verilog, the results demonstrate that our model exhibits superior performance, underlining the potential of specialized LLMs in hardware design automation.
-              </p>
-            </td>
-          </tr>
+      <div class="pub">
+        <span class="badge badge-conf">BuildSys 2014</span>
+        <div class="pub-body">
+          <a href="https://dl.acm.org/doi/abs/10.1145/2674061.2674069" class="pub-title">Wattshare: Detailed energy apportionment in shared living spaces within commercial buildings</a>
+          <div class="pub-authors"><strong>Shailja Thakur</strong>, Manaswi Saha, Amarjeet Singh, Yuvraj Agarwal</div>
+          <div class="pub-links"><a href="https://dl.acm.org/doi/abs/10.1145/2674061.2674069">paper</a></div>
+        </div>
+      </div>
 
+      <div class="pub">
+        <span class="badge badge-conf">e-Energy 2014</span>
+        <div class="pub-body">
+          <a href="https://dl.acm.org/doi/10.1145/2602044.2602058" class="pub-title">EnergyLens: Combining Smartphones with Electricity Meter for Accurate Activity Detection and User Annotation</a>
+          <div class="pub-authors">Manaswi Saha, <strong>Shailja Thakur</strong>, Amarjeet Singh, Yuvraj Agarwal</div>
+          <div class="pub-links"><a href="https://dl.acm.org/doi/10.1145/2602044.2602058">paper</a></div>
+        </div>
+      </div>
 
-          <tr onmouseout="assert_stop()" onmouseover="assert_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='assert_image'>
-                  <img src='images/assert1.png' width="180"></div>
-                <img src='images/assert2.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function assert_start() {
-                  document.getElementById('assert_image').style.opacity = "1";
-                }
+    </div>
 
-                function assert_stop() {
-                  document.getElementById('assert_image').style.opacity = "0";
-                }
-                assert_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/pdf/2306.14027">
-                <papertitle>LLM-assisted Generation of Hardware Assertions</papertitle>
-              </a>
-              <br>
-              <a href="https://scholar.google.com/citations?user=4X6V5rwAAAAJ&hl=en&oi=ao">Rahul Kande</a>,
-              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>,
-              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>,
-              <a href="https://scholar.google.com/citations?user=MzAxRscAAAAJ&hl=en/">Brendan Dolan-Gavitt</a>,
-              <strong>Shailja Thakur</strong>,
-              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>,
-              <a href="https://scholar.google.com/citations?user=E8vzlYcAAAAJ&hl=en">Jeyavijayan Rajendran</a>
-              <br>
-              <em> &nbsp <font color="red"><strong>Just Accepted in IEEE TIFS (Transaction on Information Forensics & Security)</strong></font></em>,
-              2023
-              <br>
-              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
-              
-              <p></p>
-              <p>
-              In this work, we investigate the use of emerging large language models (LLMs) for code generation in hardware assertion generation for security, where primarily natural language prompts, such as those one would see as code comments in assertion files, are used to produce SystemVerilog assertions.
-              </p>
-            </td>
-          </tr>
+  </main>
 
-
-          <tr onmouseout="bug_stop()" onmouseover="bug_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='bug_image'>
-                  <img src='images/bug1.png' width="180"></div>
-                <img src='images/bug2.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function bug_start() {
-                  document.getElementById('bug_image').style.opacity = "1";
-                }
-
-                function bug_stop() {
-                  document.getElementById('bug_image').style.opacity = "0";
-                }
-                bug_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2302.01215">
-                <papertitle>On Hardware Security Bug Code Fixes By Querying Large Language Models</papertitle>
-              </a>
-              <br>
-              
-              <a href="https://scholar.google.com/citations?user=DCeMBDKRwaQC&hl=en&oi=ao/">Baleegh Ahmad</a>,
-              <strong>Shailja Thakur</strong>,
-              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>,
-              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>,
-              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>
-              <br>
-              <em> &nbsp <font color="red"><strong>Just Accepted in IEEE TIFS (Transaction on Information Forensics & Security)</strong></font></em>,
-              2023
-              <br>
-              <!-- <a href="https://github.com/shailja-thakur/VGen">project page</a> -->
-              
-              <p></p>
-              <p>
-              In this research, we harness the power of Large Language Models (LLMs) to automatically detect and rectify security-related bugs in Verilog hardware designs. By curating a unique dataset and employing a tailored framework, our method surpasses existing automated tools in hardware bug repair.
-              </p>
-            </td>
-          </tr>
-
-
-          <tr onmouseout="veri_stop()" onmouseover="veri_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='veri_image'>
-                  <img src='images/veri2.png' width="180"></div>
-                <img src='images/veri1.png' width="180">
-              </div>
-              <script type="text/javascript">
-                function veri_start() {
-                  document.getElementById('veri_image').style.opacity = "1";
-                }
-
-                function veri_stop() {
-                  document.getElementById('veri_image').style.opacity = "0";
-                }
-                veri_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2212.11140">
-                <papertitle>Benchmarking Large Language Models for Automated Verilog RTL Code Generation</papertitle>
-              </a>
-              <br>
-              <strong>Shailja Thakur</strong>,
-              <a href="https://scholar.google.com/citations?user=DCeMBDKRwaQC&hl=en&oi=ao/">Baleegh Ahmad</a>,
-              Zhenxing Fan,
-              <a href="https://scholar.google.com/citations?user=pRILQ5MAAAAJ&hl=en&oi=ao/">Hammond Pearce</a>,
-              <a href="https://scholar.google.com/citations?user=GOjr_RAAAAAJ&hl=en/">Benjamin Tan</a>,
-              <a href="https://scholar.google.com/citations?user=o60TaTEAAAAJ&hl=en/">Ramesh Karri</a>,
-              <a href="https://scholar.google.com/citations?user=MzAxRscAAAAJ&hl=en/">Brendan Dolan-Gavitt</a>,
-              <a href="https://scholar.google.com/citations?user=Yf8OqQQAAAAJ&hl=en/">Siddharth Garg</a>
-              <br>
-              <em>DATE &nbsp <font color="red"><strong>(Nominated for Best Paper Award)</strong></font></em>,
-              2023
-              <br>
-              <a href="https://github.com/shailja-thakur/VGen">project page</a>
-              /
-              <a href="https://huggingface.co/shailja">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2212.11140">arXiv</a>
-              <p></p>
-              <p>
-              In this paper, we characterize the ability of LLMs to generate useful Verilog. For this, we fine-tune pre-trained LLMs on Verilog datasets collected from GitHub and Verilog textbooks.
-              </p>
-            </td>
-          </tr>
-
-          <tr onmouseout="si_stop()" onmouseover="si_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='si_image'>
-                  <img src='images/attack-scenario-2-1.png' width="160">
-                </div>
-                <img src='images/attack-scenario-2-1.png' width="160">
-              </div>
-              
-              <script type="text/javascript">
-                function si_start() {
-                  document.getElementById('si_image').style.opacity = "1";
-                }
-
-                function wshare_stop() {
-                  document.getElementById('si_image').style.opacity = "0";
-                }
-                si_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2212.12101">
-                <papertitle>Security and Interpretability in Automotive Systems</papertitle>
-              </a>
-              <br>
-              <strong>Shailja Thakur</strong>,
-              <a href="https://uwaterloo.ca/embedded-software-group/people-profiles/sebastian-fischmeister">Sebastian Fischmeister</a>
-              <br>
-              <em>DATE &nbsp <font color="red"><strong>(Accepted in PhD Forum)</strong></font></em>, 2023
-              <br>
-              <!-- <a href="https://github.com/shailja-thakur/TiME">project page</a> -->
-              <a href="https://arxiv.org/abs/2212.12101">arXiv</a>
-              <p></p>
-              
-            </td>
-          </tr>
-
-
-          <tr onmouseout="time_stop()" onmouseover="time_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='time_image'>
-                  <img src='images/Time_1.png' width="160"></div>
-                <img src='images/Time_2.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function time_start() {
-                  document.getElementById('time_image').style.opacity = "1";
-                }
-
-                function time_stop() {
-                  document.getElementById('time_image').style.opacity = "0";
-                }
-                time_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a>
-                <papertitle>TiME: Time-series based 
-model outcome explanation</papertitle>
-              </a>
-              <br>
-              <strong>Shailja Thakur</strong>,
-              <a href="https://uwaterloo.ca/embedded-software-group/people-profiles/sebastian-fischmeister/">Sebastian Fischmeister</a>
-              <br>
-              <em> &nbsp <font color="red"><strong>(under review)</strong></font></em>, 2023
-              <br>
-              <a href="https://github.com/shailja-thakur/TiME">project page</a>
-              
-              <p></p>
-              <p>
-              We implement a defense mechanism for Controller area network (CAN) by profiling the ECUs based on their power consumption measurements and using the fingerprinting technique to authenticate sender ECUs of the -new messages observed on the bus.
-              </p>
-            </td>
-          </tr>
-
-          
-          
-          <tr onmouseout="saliency_stop()" onmouseover="saliency_start()" >
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='saliency_image'>
-                  <img src='images/Screen Shot 2022-08-22 at 5.40.01 PM.png' width="160"></div>
-                <img src='images/Screen Shot 2022-08-22 at 5.39.41 PM.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function saliency_start() {
-                  document.getElementById('saliency_image').style.opacity = "1";
-                }
-
-                function saliency_stop() {
-                  document.getElementById('saliency_image').style.opacity = "0";
-                }
-                saliency_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://ieeexplore.ieee.org/abstract/document/9412303/">
-                <papertitle>Saliency-map based model explanation</papertitle>
-              </a>
-              <br>
-              <strong>Shailja Thakur</strong>, 
-              <a href="https://uwaterloo.ca/embedded-software-group/people-profiles/sebastian-fischmeister">Sebastian Fischmeister</a>
-              <br>
-              <em>ICPR</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              <a href="https://github.com/shailja-thakur/explainability-project/">project page</a> / 
-              <a href="https://ieeexplore.ieee.org/abstract/document/9412303">arXiv</a>     
-              <p></p>
-              <p>Saliency map based explanation for highlighting the regions in the image that contributes toward target class.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="gen_stop()" onmouseover="gen_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='gen_image'>
-                  <img src='images/mask_church.png' width="160"></div>
-                <img src='images/completed_alternated_images_church.png' width="160">
-              </div>
-              <script type="text/javascript">
-                function gen_start() {
-                  document.getElementById('gen_image').style.opacity = "1";
-                }
-
-                function gen_stop() {
-                  document.getElementById('gen_image').style.opacity = "0";
-                }
-                gen_stop()
-              </script>
-            </td>
-                  <td style="padding:20px;width:75%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2006.09504">
-                  <papertitle>Generalizable Saliency map-based explanation</papertitle>
-                </a>
-                <br>
-                <strong>Shailja Thakur</strong>,
-                <a href="https://uwaterloo.ca/embedded-software-group/people-profiles/sebastian-fischmeister/">Sebastian Fischmeister</a>
-                <br>
-          <em>ICPR</em>, 2020 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-                <br>
-                <a href="https://github.com/shailja-thakur/generalizable-saliency">project page</a>
-          
-                <a href="https://arxiv.org/abs/2006.09504">arXiv</a>
-                <p></p>
-                <p>Generalizability is achieved through alternate explanations where alternate explanations are the variations of the pixels in the salient regions of the input for which the model prediction remains unaltered.</p>
-              </td>
-            </tr>
-
-            <tr onmouseout="malle_stop()" onmouseover="malle_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <div class="one">
-                <div class="two" id='malle_image'>
-                  <img src='images/attack_v2.jpg' width="160"></div>
-                <img src='images/no_attack.jpg' width="160">
-              </div>
-              <script type="text/javascript">
-                function malle_start() {
-                  document.getElementById('malle_image').style.opacity = "1";
-                }
-
-                function malle_stop() {
-                  document.getElementById('malle_image').style.opacity = "0";
-                }
-                malle_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://dl.acm.org/doi/10.1145/3571288">
-                <papertitle>CANOA: CAN 
-Origin Authentication Through Power Side-Channel Monitoring</papertitle>
-              </a>
-              <br>
-              <strong>Shailja Thakur</strong>,
-              <a href="https://uwaterloo.ca/embedded-software-group/people-profiles/carlos-moreno/">Carlos Moreno</a>, 
-              <a href="https://uwaterloo.ca/embedded-software-group/people-profiles/sebastian-fischmeister/">Sebastian Fischmeister</a>
-              <br>
-              <!-- <em>ACM TCPS (Transaction in Cyber-Physical Systems) &nbsp <font color="red"><strong>(Accepted)</strong></font></em>,  -->
-              <em> &nbsp <font color="red"><strong>ACM TCPS (Transaction in Cyber-Physical Systems)</strong></font></em>2022
-              <br>
-              <a href="https://github.com/shailja-thakur/CANMAP">project page</a>
-              /
-              <a href="https://arxiv.org/abs/2006.06993">arXiv</a>
-              <p></p>
-              <p>
-              We implement a defense mechanism for Controller area network (CAN) by profiling the ECUs based on their power consumption measurements and using the fingerprinting technique to authenticate sender ECUs of the -new messages observed on the bus.
-              </p>
-            </td>
-          </tr>
-            
-
-
-          <tr onmouseout="wshare_stop()" onmouseover="wshare_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- <div class="one"> -->
-                <!-- <div class="two" id='wshare_image'> -->
-                  <img src='images/image1.png' width="160">
-                <!-- </div> -->
-                <!-- <img src='images/image1.png' width="160"> -->
-              <!-- </div>
-              
-              <script type="text/javascript">
-                function wshare_start() {
-                  document.getElementById('wshare_image').style.opacity = "1";
-                }
-
-                function wshare_stop() {
-                  document.getElementById('wshare_image').style.opacity = "0";
-                }
-                wshare_stop()
-              </script> -->
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://dl.acm.org/doi/abs/10.1145/2674061.2674069">
-                <papertitle>Wattshare: Detailed energy apportionment in shared living spaces within commercial buildings</papertitle>
-              </a>
-              <br>
-              <strong>Shailja Thakur</strong>,
-              <a href="https://scholar.google.com/citations?user=KWOTB3UAAAAJ&hl=en/">Manaswi Saha</a>,
-              <a href="https://scholar.google.com/citations?user=Yipk0X4AAAAJ&hl=en/">Amarjeet Singh</a>,
-              <a href="https://scholar.google.com/citations?user=H4UeZ2MAAAAJ&hl=en/">Yuvraj Agarwal</a>
-              <br>
-              <em>ACM e-Energy</em>, 2013 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              
-              <a href="https://dl.acm.org/doi/abs/10.1145/2674061.2674069">arXiv</a>
-              
-              <p></p>
-              <p>The primary objective of this research was to explore the combined potential 
-of using smartphones with smart electricity meters in shared spaces such as a student dorm setting and disaggregate the whole energy consumption to an individual occupant. </p>
-            </td>
-          </tr> 
-
-
-          <tr onmouseout="elens_stop()" onmouseover="elens_start()">
-            <td style="padding:20px;width:25%;vertical-align:middle">
-              <!-- <div class="one"> -->
-                <!-- <div class="two" id='elens_image'> -->
-                <img src='images/image5.png' width="160">
-              <!-- </div> -->
-                <!-- <img src='images/image4.png' width="160"> -->
-              <!-- </div>
-              <script type="text/javascript">
-                function elens_start() {
-                  document.getElementById('elens_image').style.opacity = "1";
-                }
-
-                function elens_stop() {
-                  document.getElementById('elens_image').style.opacity = "0";
-                }
-                elens_stop()
-              </script> -->
-            </td>
-            <td style="padding:20px;width:75%;vertical-align:middle">
-              <a href="https://dl.acm.org/doi/10.1145/2602044.2602058">
-                <papertitle>EnergyLens: Combining Smartphones with Electricity Meter for Accurate 
-Activity Detection and User Annotation</papertitle>
-              </a>
-              <br>
-              
-              <a href="https://scholar.google.com/citations?user=KWOTB3UAAAAJ&hl=en/">Manaswi Saha</a>,
-              <strong>Shailja Thakur</strong>,
-              <a href="https://scholar.google.com/citations?user=Yipk0X4AAAAJ&hl=en/">Amarjeet Singh</a>,
-              <a href="https://scholar.google.com/citations?user=H4UeZ2MAAAAJ&hl=en/">Yuvraj Agarwal</a>
-              <br>
-              <em>ACM e-Energy</em>, 2013 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font>
-              <br>
-              
-              <a href="https://dl.acm.org/doi/10.1145/2602044.2602058">arXiv</a>
-              
-              <p></p>
-              <p>The primary objective of this research was to explore the combined potential 
-of using smartphones with smart electricity meters in commercial buildings. </p>
-            </td>
-          </tr> 
-
-
-
-
-
-
-        </tbody></table>
-
-        
 </body>
 </html>
