@@ -94,7 +94,10 @@ nav a.on::after{content:"";position:absolute;left:0;right:0;bottom:-0.9rem;heigh
 .lede a.award-link:hover{border-bottom-color:var(--drift)}
 
 .portrait{position:sticky;top:2rem}
-.portrait img{width:168px;border-radius:2px;display:block;filter:grayscale(1) contrast(1.04)}
+/* the photo only — icons in .handles are also descendants of .portrait */
+.portrait > img,.portrait > a > img{
+  width:168px;border-radius:2px;display:block;filter:grayscale(1) contrast(1.04);
+}
 .handles{
   display:grid;grid-template-columns:1fr 1fr;gap:0.4rem;margin-top:0.9rem;
   font-family:var(--mono);font-size:0.75rem;font-weight:500;letter-spacing:0.04em;
@@ -110,7 +113,11 @@ nav a.on::after{content:"";position:absolute;left:0;right:0;bottom:-0.9rem;heigh
   background:color-mix(in srgb,var(--signal) 7%,transparent);
 }
 .handles a.wide{grid-column:1 / -1}
-.handles img{width:13px;height:13px;object-fit:contain;flex-shrink:0;opacity:0.75;transition:opacity .12s}
+.handles img{
+  width:14px;height:14px;min-width:14px;max-width:14px;
+  object-fit:contain;flex-shrink:0;opacity:0.75;transition:opacity .12s;
+  filter:none;
+}
 .handles a:hover img{opacity:1}
 @media (prefers-color-scheme:dark){
   :root:not([data-theme="light"]) .handles img{filter:invert(1) brightness(1.6)}
@@ -225,7 +232,8 @@ img{max-width:100%;height:auto}
   .wrap{padding:0 1.25rem}
   .lede{grid-template-columns:1fr;gap:1.8rem}
   .portrait{position:static;order:-1;width:100%}
-  .portrait img{width:132px}
+  /* scope to the photo only — .handles icons also live inside .portrait */
+  .portrait > img,.portrait > a > img{width:132px}
   /* min-width:0 lets grid tracks shrink below their content width */
   .handles{max-width:340px;grid-template-columns:repeat(2,minmax(0,1fr))}
   .handles a{min-width:0}
