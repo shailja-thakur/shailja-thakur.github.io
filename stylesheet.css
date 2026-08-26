@@ -305,6 +305,11 @@ hr {
   color: #92400e;
 }
 
+.badge-preprint {
+  background: #f4f4f5;
+  color: #52525b;
+}
+
 .pub-body { flex: 1; }
 
 .pub-title {
