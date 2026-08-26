@@ -1,47 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shailja Thakur</title>
-  <link rel="stylesheet" href="stylesheet.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Shailja Thakur</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 <body>
+<div class="wrap">
 
-  <nav class="nav">
-    <a href="index.html" class="active">About</a>
+  <header class="masthead">
+    <div class="name-row">
+      <h1>Shailja Thakur</h1>
+      <div class="role">
+        <span>Research Scientist</span>
+        <span>IBM Research</span>
+      </div>
+    </div>
+    <div class="scale" aria-hidden="true">
+      <i class="tall" style="left:0"></i><i style="left:5%"></i><i style="left:10%"></i><i style="left:15%"></i>
+      <i class="tall" style="left:20%"></i><i style="left:25%"></i><i style="left:30%"></i><i style="left:35%"></i>
+      <i class="tall" style="left:40%"></i><i style="left:45%"></i><i style="left:50%"></i><i style="left:55%"></i>
+      <i class="tall" style="left:60%"></i><i style="left:65%"></i><i style="left:70%"></i><i style="left:75%"></i>
+      <i class="tall" style="left:80%"></i><i style="left:85%"></i><i style="left:90%"></i><i style="left:95%"></i>
+      <i class="tall" style="left:calc(100% - 1px)"></i>
+    </div>
+  </header>
+
+  <section class="lede">
+    <div>
+      <p>I study the behavior of <strong>small language models</strong> in agentic settings, and develop methods to address the practical challenges of deploying them &mdash; <strong>performance, on-premise constraints, and safety</strong>. Most of the work sits around the model: <strong>harness search</strong>, decomposing agents by <strong>role-specific adapters</strong> for planning, tool use, and verification, and <strong>memory</strong> that persists across long workflows. A parallel thread is <strong>agentic AI debugging</strong>: plans that pass structural checks yet cannot execute, runs that loop without noticing, scores that shift under rewording.</p>
+      <p class="quiet">Before this, I pioneered the use of <strong>Large Language Models for automating hardware design</strong> (Verilog code generation, bug repair, security assertions) &mdash; work that received a <a class="award-link" href="https://dl.acm.org/journal/todaes/honors-and-awards">Best Paper Award from ACM TODAES</a>. My PhD at the <strong>University of Waterloo</strong> (with <a href="https://uwaterloo.ca/embedded-software-group/people-profiles/sebastian-fischmeister">Sebastian Fischmeister</a>) focused on security and interpretability in automotive systems. I did my PostDoc at <strong>NYU</strong> with <a href="https://engineering.nyu.edu/faculty/siddharth-garg">Siddharth Garg</a> and <a href="https://cyber.nyu.edu/profile/ramesh-karri/">Ramesh Karri</a>.</p>
+    </div>
+    <div class="portrait">
+      <img src="images/ShailjaPhoto.JPG" alt="Shailja Thakur">
+      <div class="handles">
+        <a class="wide" href="https://scholar.google.com/citations?user=bjC4g_MAAAAJ"><img src="images/google-scholar.png" alt="">Scholar</a>
+        <a href="https://github.com/shailja-thakur/"><img src="images/github-mark.png" alt="">GitHub</a>
+        <a href="https://www.linkedin.com/in/shailjathakur"><img src="images/linkedin.png" alt="">LinkedIn</a>
+        <a href="https://twitter.com/shailjaThakur3"><img src="images/X.png" alt="">X</a>
+        <a href="https://huggingface.co/shailja"><img src="images/hf-logo.png" alt="">HF</a>
+      </div>
+    </div>
+  </section>
+
+  <nav>
+    <a href="index.html" class="on">About</a>
     <a href="research.html">Research</a>
     <a href="activity.html">Activity</a>
     <a href="blog/index.html">Blog</a>
   </nav>
 
-  <main class="container">
+  <section class="sec">
+    <div class="sec-head">
+      <h2>Recent</h2>
+      <div class="fill"></div>
+      <div class="count">2026</div>
+    </div>
+    <div class="log">
 
-    <section class="profile">
-      <div class="profile-text">
-        <h1>Shailja Thakur</h1>
-        <div class="affiliation">Research Scientist, IBM Research</div>
-        <p class="bio">
-          I study the behavior of <strong>small language models</strong> in agentic settings, and develop methods to address the practical challenges of deploying them &mdash; <strong>performance, on-premise constraints, and safety</strong>. Most of the work sits around the model: <strong>harness search</strong>, decomposing agents by <strong>role-specific adapters</strong> for planning, tool use, and verification, and <strong>memory</strong> that persists across long workflows. A parallel thread is <strong>agentic AI debugging</strong>: plans that pass structural checks yet cannot execute, runs that loop without noticing, scores that shift under rewording.
-        </p>
-        <p class="bio">
-          Before this, I pioneered the use of Large Language Models for automating hardware design (Verilog code generation, bug repair, security assertions)&mdash;work that received a <a href="https://dl.acm.org/journal/todaes/honors-and-awards">Best Paper Award from ACM TODAES</a>. My PhD at the <strong>University of Waterloo</strong> (with <a href="https://uwaterloo.ca/embedded-software-group/people-profiles/sebastian-fischmeister">Sebastian Fischmeister</a>) focused on security and interpretability in automotive systems. I did my PostDoc at <strong>NYU</strong> with <a href="https://engineering.nyu.edu/faculty/siddharth-garg">Siddharth Garg</a> and <a href="https://cyber.nyu.edu/profile/ramesh-karri/">Ramesh Karri</a>.
-        </p>
-      </div>
-      <div class="profile-photo">
-        <a href="images/ShailjaPhoto.JPG"><img src="images/ShailjaPhoto.JPG" alt="Shailja Thakur"></a>
-        <div class="links">
-          <a href="https://www.linkedin.com/in/shailjathakur"><img src="images/linkedin.png" alt="LinkedIn"></a>
-          <a href="https://scholar.google.com/citations?user=bjC4g_MAAAAJ"><img src="images/google-scholar.png" alt="Scholar"></a>
-          <a href="https://twitter.com/shailjaThakur3"><img src="images/X.png" alt="X"></a>
-          <a href="https://github.com/shailja-thakur/"><img src="images/github-mark.png" alt="GitHub"></a>
-          <a href="https://huggingface.co/shailja"><img src="images/hf-logo.png" alt="HuggingFace" class="hf-icon"></a>
+      <div class="log-row">
+        <div class="stamp">Aug 2026</div>
+        <div class="log-body">
+          <span class="tag press">Press</span><strong>BenchDrift</strong> covered in
+          <a class="outlet" href="https://cryptobriefing.com/ibm-benchdrift-llm-benchmark-wording/">Crypto Briefing</a>,
+          <a class="outlet" href="https://daily.dev/posts/benchmark-leaderboards-might-just-be-measuring-phrasing-luck-g5suhbquy">daily.dev</a>, and
+          <a class="outlet" href="https://pro.edgex.exchange/en-US/news/article/ibm-research-benchdrift-benchmark-wording-drift">edgeX</a>
         </div>
       </div>
-    </section>
 
-  </main>
+      <div class="log-row">
+        <div class="stamp">Aug 2026</div>
+        <div class="log-body">
+          <span class="tag pub">Preprint</span><a class="lead" href="https://arxiv.org/abs/2608.11694">The Wording Effect: Quantifying Two-Way Drift in LLM Benchmark Performance</a> <span class="log-note">BenchDrift</span>
+        </div>
+      </div>
 
+      <div class="log-row">
+        <div class="stamp">Jun 2026</div>
+        <div class="log-body">
+          <span class="tag talk">Talk</span><span class="lead">Confidently Wrong: When AI Cannot Catch Its Own Bugs</span> &mdash;
+          <a href="https://ossindia2026.sched.com/?searchstring=shailja">Open Source Summit India</a>, Mumbai
+        </div>
+      </div>
+
+      <div class="log-row">
+        <div class="stamp">2026</div>
+        <div class="log-body">
+          <span class="tag pub">ACL</span>Two papers accepted at ACL 2026 &mdash;
+          <a class="lead" href="https://aclanthology.org/2026.acl-industry.55/">Think Like You Execute</a> and
+          <a class="lead" href="https://aclanthology.org/2026.findings-acl.2065/">STaD</a> <span class="log-note">Findings</span>
+        </div>
+      </div>
+
+      <div class="log-row">
+        <div class="stamp">Feb 2026</div>
+        <div class="log-body">
+          <span class="tag post">Blog</span><a class="lead" href="blog/kirana-app/index.html">The Kirana Owner Who Built His Own App in Five Minutes</a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section class="sec">
+    <div class="sec-head">
+      <h2>Selected work</h2>
+      <div class="fill"></div>
+      <div class="count">19 total</div>
+    </div>
+    <div class="work">
+
+      <div class="item">
+        <div class="venue">ACL<br>2026</div>
+        <div>
+          <a class="title" href="https://aclanthology.org/2026.acl-industry.55/">Think Like You Execute: Verifiable Chain of Thought from Program Traces</a>
+          <div class="authors"><b>Shailja Thakur</b>, Vaibhav Saxena, Rohan Kulkarni, Shivdeep Singh, Parameswaran Selvam, Hiroshi Kanayama, Hima Patel</div>
+          <div class="meta"><a href="https://aclanthology.org/2026.acl-industry.55/">Paper</a><span class="sep">/</span><a href="https://arxiv.org/abs/2512.00127">arXiv</a></div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="venue pre">arXiv<br>2026</div>
+        <div>
+          <a class="title" href="https://arxiv.org/abs/2608.11694">The Wording Effect: Quantifying Two-Way Drift in LLM Benchmark Performance</a>
+          <div class="authors"><b>Shailja Thakur</b>, Sungeun An, Chad DeLuca, Hima Patel</div>
+          <div class="meta"><a href="https://arxiv.org/abs/2608.11694">arXiv</a></div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="venue">TODAES<br>2024</div>
+        <div>
+          <a class="title" href="https://arxiv.org/abs/2308.00708">VeriGen: A Large Language Model for Verilog Code Generation</a><span class="award">Best Paper</span>
+          <div class="authors"><b>Shailja Thakur</b>, Baleegh Ahmad, Hammond Pearce, Benjamin Tan, Brendan Dolan-Gavitt, Ramesh Karri, Siddharth Garg</div>
+          <div class="meta"><a href="https://github.com/shailja-thakur/VGen">Project</a><span class="sep">/</span><a href="https://arxiv.org/abs/2308.00708">arXiv</a><span class="sep">/</span><a href="https://dl.acm.org/journal/todaes/honors-and-awards">Award</a></div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="venue">ACL Findings<br>2026</div>
+        <div>
+          <a class="title" href="https://aclanthology.org/2026.findings-acl.2065/">STaD: Scaffolded Task Design for Identifying Compositional Skill Gaps in LLMs</a>
+          <div class="authors">Sungeun An, Swanand Ravindra Kadhe, <b>Shailja Thakur</b>, Chad DeLuca, Hima Patel</div>
+          <div class="meta"><a href="https://aclanthology.org/2026.findings-acl.2065/">Paper</a></div>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="venue">DATE<br>2023</div>
+        <div>
+          <a class="title" href="https://arxiv.org/abs/2212.11140">Benchmarking Large Language Models for Automated Verilog RTL Code Generation</a><span class="award">Best Paper Nominee</span>
+          <div class="authors"><b>Shailja Thakur</b>, Baleegh Ahmad, Zhenxing Fan, Hammond Pearce, Benjamin Tan, Ramesh Karri, Brendan Dolan-Gavitt, Siddharth Garg</div>
+          <div class="meta"><a href="https://github.com/shailja-thakur/VGen">Project</a><span class="sep">/</span><a href="https://arxiv.org/abs/2212.11140">arXiv</a></div>
+        </div>
+      </div>
+
+    </div>
+    <a class="more" href="research.html">All publications</a>
+  </section>
+
+  <footer></footer>
+
+</div>
 </body>
 </html>

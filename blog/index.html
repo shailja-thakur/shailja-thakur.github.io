@@ -1,40 +1,64 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Shailja Thakur - Blog</title>
-  <link rel="stylesheet" href="../stylesheet.css">
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Shailja Thakur — Blog</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
 </head>
 <body>
+<div class="wrap">
 
-  <nav class="nav">
+  <header class="masthead">
+    <div class="name-row">
+      <h1><a href="../index.html">Shailja Thakur</a></h1>
+      <div class="role">
+        <span>Research Scientist</span>
+        <span>IBM Research</span>
+      </div>
+    </div>
+    <div class="scale" aria-hidden="true">
+      <i class="tall" style="left:0"></i><i style="left:5%"></i><i style="left:10%"></i><i style="left:15%"></i>
+      <i class="tall" style="left:20%"></i><i style="left:25%"></i><i style="left:30%"></i><i style="left:35%"></i>
+      <i class="tall" style="left:40%"></i><i style="left:45%"></i><i style="left:50%"></i><i style="left:55%"></i>
+      <i class="tall" style="left:60%"></i><i style="left:65%"></i><i style="left:70%"></i><i style="left:75%"></i>
+      <i class="tall" style="left:80%"></i><i style="left:85%"></i><i style="left:90%"></i><i style="left:95%"></i>
+      <i class="tall" style="left:calc(100% - 1px)"></i>
+    </div>
+  </header>
+
+  <nav>
     <a href="../index.html">About</a>
     <a href="../research.html">Research</a>
     <a href="../activity.html">Activity</a>
-    <a href="index.html" class="active">Blog</a>
+    <a href="index.html" class="on">Blog</a>
   </nav>
 
-  <main class="container">
+  <section class="sec">
+    <div class="posts">
 
-    <div class="blog-list">
-
-      <div class="blog-entry">
+      <div class="post-item">
         <h3><a href="kirana-app/index.html">The Kirana Owner Who Built His Own App in Five Minutes</a></h3>
-        <div class="date">February 2026</div>
-        <p class="summary">A kirana owner at a get-together in Bangalore watched a founder build his inventory app in five minutes and said &ldquo;Yeh toh hum bhi kar sakte the.&rdquo; Gutenberg changed who could produce, not who could consume. I think software just did the same thing.</p>
+        <div class="when">February 2026</div>
+        <p class="sum">A kirana owner at a get-together in Bangalore watched a founder build his inventory app in five minutes and said &ldquo;Yeh toh hum bhi kar sakte the.&rdquo; Gutenberg changed who could produce, not who could consume. I think software just did the same thing.</p>
+        <div class="via">Also on <a href="https://www.linkedin.com/pulse/kirana-owner-who-built-his-own-app-five-minutes-shailja-thakur-c9hyc/">LinkedIn</a></div>
       </div>
 
-      <div class="blog-entry">
+      <div class="post-item">
         <h3><a href="agent-trajectories/index.html">What 48,000 AI Agent Trajectories Reveal</a></h3>
-        <div class="date">February 2026</div>
-        <p class="summary">I downloaded every publicly available trajectory from the SWE-bench Verified leaderboard&mdash;48,580 runs across 134 different AI agent systems&mdash;and pulled out 40+ behavioral features from each one. Here is what came out of the data.</p>
+        <div class="when">February 2026</div>
+        <p class="sum">I downloaded every publicly available trajectory from the SWE-bench Verified leaderboard&mdash;48,580 runs across 134 different AI agent systems&mdash;and pulled out 40+ behavioral features from each one. Here is what came out of the data.</p>
       </div>
 
     </div>
+  </section>
 
-  </main>
+  <footer></footer>
 
+</div>
 </body>
 </html>
